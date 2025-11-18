@@ -5,6 +5,16 @@ const btn = document.querySelector("form button");
 const fromCurr = document.querySelector(".from select");
 const toCurr= document.querySelector(".to select");
 let msg = document.querySelector(".msg");
+const swapIcon = document.querySelector(".swap-icon");
+
+swapIcon.addEventListener("click", () => {
+    let temp = fromCurr.value;
+    fromCurr.value = toCurr.value;
+    toCurr.value = temp;
+
+    updateFlags(fromCurr);
+    updateFlags(toCurr);
+});
 
 for (let select of dropdowns) {
     for (code in countryList){
