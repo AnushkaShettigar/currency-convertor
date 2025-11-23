@@ -1,4 +1,5 @@
 ﻿# currency-converter
 
-https://currencyconvertor-nush.netlify.app/
+https://currencyconverter-nush.netlify.app/
+
 
